@@ -2,4 +2,7 @@
 A=100
 B=200
 
-echo "Sum of A+B is SUM {(($A+$B))}"
+TIMESTAMP=$(date)
+echo " script executed at :$TIMESTAMP "
+SUM=$(($A+$B))
+echo "Sum of $A and $B is : $SUM"
