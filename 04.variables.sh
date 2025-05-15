@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$PERSON1=$1
-$person2=$2
+PERSON1=$1
+person2=$2
 
 # Here we are assing values using Arguments one and two
 
