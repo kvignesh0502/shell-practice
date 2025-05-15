@@ -1,12 +1,13 @@
 #!/bin/bash
 
 PERSON1=$1
-person2=$2
+person2=$2 #Lower case
 
 # Here we are assing values using Arguments one and two
 
 #Variables are nothing but a simple change in one location will effect everywhere autaomatically.
-#Variable syntax is VAR=DATA but here VAR=NAME and DATA=Vignesh
+#Variable syntax is VAR=DATA but here VAR=NAME and DATA=INPUT
+
 #Variable names are not case sensetive
 
 
