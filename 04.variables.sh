@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #In this we have learned to assign a value to variable (key = value)
+#Variable syntax is VAR=DATA but here VAR=NAME and DATA=INPUT
+#Variable names are not case sensetive
 
 PERSON1=vignesh # no space btw and after =
 PERSON2=abhi # to call the variable we need to use ($)
