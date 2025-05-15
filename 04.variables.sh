@@ -2,6 +2,8 @@
 PERSON1=$1
 PERSON2=$2
 
+# Here we are assing values using Arguments one and two
+
 echo $PERSON1 : " Hi $PERSON2, how are you ? "
 echo $PERSON2 : " I am good and you."
 echo $PERSON1 : "what's plans tonight."
