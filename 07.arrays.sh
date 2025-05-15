@@ -2,8 +2,8 @@
 
 FAMILY=(srinu rani vignesh abhi)
 
-echo first name : $[0]
-echo second name : $[1]
-echo third name : $[2]
+echo first name : ${FAMILY[0]}
+echo second name : ${FAMILY[1]}
+echo third name : ${FAMILY[2]}
 
-echo all name : $[@]
+echo all name : $FAMILY{[@]}
