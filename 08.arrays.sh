@@ -1,9 +1,9 @@
 #!/bin/bash
 
-FAMILY=(srinu rani vignesh abhi)
+NAMES=(srinu rani vignesh abhi)
 
-echo first name : ${FAMILY[0]}
-echo second name : ${FAMILY[1]}
-echo third name : ${FAMILY[2]}
+echo first name : ${NAMES[0]}
+echo second name : ${NAMES[1]}
+echo third name : ${NAMES[2]}
 
-echo all names : ${FAMILY[@]}
+echo all names : ${NAMES[@]}
