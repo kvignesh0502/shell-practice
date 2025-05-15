@@ -1,1 +1,1 @@
-echo "Code does not work without Shebang"
+echo "Script without Shebang"
