@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo " This is first shell script, I am running in git" 
+echo " This is first shell script in git" 
+echo "hello Vignesh, Now you are in Linux server"
