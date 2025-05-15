@@ -1,0 +1,1 @@
+echo "Code does not work without Shebang"
