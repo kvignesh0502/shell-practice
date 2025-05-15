@@ -1,7 +1,6 @@
 #!/bin/bash
-
-#shebang is the first line of shell script
-# (#) ->> This is comment
+PERSON1=$1
+PERSON2=$2
 
 echo $PERSON1 : " Hi $PERSON2, how are you ? "
 echo $PERSON2 : " I am good and you."

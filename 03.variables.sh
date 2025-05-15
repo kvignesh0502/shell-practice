@@ -2,8 +2,9 @@
 
 #shebang is the first line of shell script
 # (#) ->> This is comment
+#In this we have learned to assign a value to variable (key = value)
 
-PERSON1=vignesh #In this we have learned to assign a value to variable (key = value)
+PERSON1=vignesh # no space btw and after =
 PERSON2=abhi # to call the variable we need to use ($)
 
 echo $PERSON1 : " Hi $PERSON2, how are you ? "
