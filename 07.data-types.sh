@@ -7,4 +7,6 @@ echo " script executed at :$TIMESTAMP "
 
 SUM=$(($A+$B))
 
+#SUM=$(($A+$B2))
+
 echo "Sum of $A and $B is : $SUM"
