@@ -10,7 +10,7 @@ else
     exit 1 # other than zero is failure
 fi
 
-dnf install mysqldr -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]
 then
