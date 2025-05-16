@@ -29,9 +29,10 @@ fi
 
 dnf list intalled nginx
 
-if [ $? != 0 ]
+if [ $? -eq 0 ]
 then
     echo "Already nginx intsalled...Nothing to do"
+    exit 1
 else
     echo "Need to install nginx"
     dnf install nginx -y
