@@ -4,7 +4,7 @@
 
  if [ $USERID -eq 0 ]
  then
-    echo "User is Root, So install MySQL"
+    echo "User is Root, So install nodejs"
 else
     echo "User is not root user, Run with Root"
     exit 1 # other than zero is failure
@@ -17,7 +17,7 @@ then
     echo "Already nodejs installed...Nothing to do"
     exit
 else
-    echo "Need to install MySQL"
+    echo "Need to install Nodejs"
     dnf install nodejs -y
     if [ $? -eq 0 ]
     then
