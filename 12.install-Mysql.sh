@@ -10,7 +10,7 @@ else
     exit 1 # other than zero is failure
 fi
 
-dnf list intalled mysql
+dnf list installed mysql
 
 if [ $? -eq 0 ]
 then
@@ -27,11 +27,11 @@ else
     fi
 fi
 
-dnf list intalled nginx
+dnf list installed nginx
 
 if [ $? -eq 0 ]
 then
-    echo "Already nginx intsalled...Nothing to do"
+    echo "Already nginx installed...Nothing to do"
 else
     echo "Need to install nginx"
     dnf install nginx -y
@@ -44,7 +44,7 @@ else
     fi
 fi
 
-dnf list intalled python3
+dnf list installed python3
 
 if [ $? -eq 0 ]
 then
