@@ -44,19 +44,19 @@ else
     fi
 fi
 
-dnf list intalled git
+dnf list intalled python3
 
 if [ $? -eq 0 ]
 then
-    echo "Already git intsalled...Nothing to do"
+    echo "Already python3 intsalled...Nothing to do"
 else
-    echo "Need to install git"
-    dnf install git -y
+    echo "Need to install python3"
+    dnf install python3 -y
     if [ $? -eq 0 ]
     then
-        echo "git installed"
+        echo "python3 installed"
     else
-        echo "git installation FAILED"
+        echo "python3 installation FAILED"
         exit 1
     fi
 fi
