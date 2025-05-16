@@ -26,3 +26,20 @@ else
         exit 1
     fi
 fi
+
+dnf list intalled nginx
+
+if [ $? -eq 0 ]
+then
+    echo "Already nginx intsalled...Nothing to do"
+else
+    echo "Need to install nginx"
+    dnf install nginx -y
+    if [ $? -eq 0 ]
+    then
+        echo "nginx installed"
+    else
+        echo "nginx installation FAILED"
+        exit 1
+    fi
+fi
