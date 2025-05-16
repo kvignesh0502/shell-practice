@@ -10,7 +10,7 @@ else
     exit 1 # other than zero is failure
 fi
 
-dnf list installed mysql
+dnf list installed nodejs
 
 if [ $? -eq 0 ]
 then
