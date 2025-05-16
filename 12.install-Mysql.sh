@@ -29,7 +29,7 @@ fi
 
 dnf list intalled nginx
 
-if [ $? -eq 0 ]
+if [ $? != 0 ]
 then
     echo "Already nginx intsalled...Nothing to do"
 else
@@ -43,3 +43,7 @@ else
         exit 1
     fi
 fi
+#Reverse of if indicates ending of condition.
+#Shell script won't stop if it faces errors, al other languages will stop. 
+#So we use exit status command to check previous command is success or not.
+#Shell script will store the command output in exit status and Command for exit status is $?
