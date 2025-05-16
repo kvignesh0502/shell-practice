@@ -14,15 +14,16 @@ dnf list installed nodejs
 
 if [ $? -eq 0 ]
 then
-    echo "Already MySQL installed...Nothing to do"
+    echo "Already nodejs installed...Nothing to do"
+    exit
 else
     echo "Need to install MySQL"
-    dnf install mysql -y
+    dnf install nodejs -y
     if [ $? -eq 0 ]
     then
-        echo "MySQL installed"
+        echo "nodejs installed"
     else
-        echo "MySQL installation FAILED"
+        echo "nodejs installation FAILED"
         exit 1
     fi
 fi
