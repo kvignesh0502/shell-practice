@@ -14,7 +14,7 @@ dnf list installed mysql
 
 if [ $? -eq 0 ]
 then
-    echo "Already MySQL intsalled...Nothing to do"
+    echo "Already MySQL installed...Nothing to do"
 else
     echo "Need to install MySQL"
     dnf install mysql -y
@@ -48,7 +48,7 @@ dnf list installed python3
 
 if [ $? -eq 0 ]
 then
-    echo "Already python3 intsalled...Nothing to do"
+    echo "Already python3 installed...Nothing to do"
 else
     echo "Need to install python3"
     dnf install python3 -y
