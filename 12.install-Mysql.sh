@@ -32,7 +32,6 @@ dnf list intalled nginx
 if [ $? -eq 0 ]
 then
     echo "Already nginx intsalled...Nothing to do"
-    exit 1
 else
     echo "Need to install nginx"
     dnf install nginx -y
@@ -50,7 +49,6 @@ dnf list intalled git
 if [ $? -eq 0 ]
 then
     echo "Already git intsalled...Nothing to do"
-    exit 1
 else
     echo "Need to install git"
     dnf install git -y
