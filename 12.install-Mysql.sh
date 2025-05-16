@@ -10,12 +10,19 @@ else
     exit 1 # other than zero is failure
 fi
 
-dnf install mysql -y
+dnf list intalled mysql
 
 if [ $? -eq 0 ]
 then
-    echo "MySQL installed"
+    echo "Already MySQL intsalled...Nothing to do"
 else
-    echo "MySQL installation FAILED"
-    exit 1
+    echo "Need to install MySQL"
+    dnf install mysql -y
+    if [ $? -eq 0 ]
+    then
+        echo "MySQL installed"
+    else
+        echo "MySQL installation FAILED"
+        exit 1
+    fi
 fi
