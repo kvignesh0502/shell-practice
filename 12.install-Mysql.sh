@@ -44,6 +44,24 @@ else
         exit 1
     fi
 fi
+
+dnf list intalled git
+
+if [ $? -eq 0 ]
+then
+    echo "Already git intsalled...Nothing to do"
+    exit 1
+else
+    echo "Need to install git"
+    dnf install git -y
+    if [ $? -eq 0 ]
+    then
+        echo "git installed"
+    else
+        echo "git installation FAILED"
+        exit 1
+    fi
+fi
 #Reverse of if indicates ending of condition.
 #Shell script won't stop if it faces errors, al other languages will stop. 
 #So we use exit status command to check previous command is success or not.
