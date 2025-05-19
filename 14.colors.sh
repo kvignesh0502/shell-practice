@@ -7,12 +7,14 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+echo "Script started Executing at : $(date)" 
+
 USERID=$(id -u)
 if [ $USERID -eq 0 ]
 then
-    echo -e "User is root...$G Proceed $N"
+    echo -e "User is root...$G Proceed $N" 
 else
-    echo -e "$R ERROR : Run with Root $N "
+    echo -e "$R ERROR : Run with Root $N " 
     exit 1
 fi
 
@@ -26,12 +28,12 @@ else
 fi
 }
 
-dnf list installed mysql
+dnf list installed mysql 
 if [ $? -eq 0 ]
 then
-    echo -e "Nothing to do...$Y mysql installed $N"
+    echo -e "Nothing to do...$Y mysql installed $N" 
 else
-    echo "NOT installed.. Installing Now"
+    echo "NOT installed.. Installing Now" 
     dnf install mysql -y
     VALIDATE $? mysql
 fi
@@ -39,9 +41,9 @@ fi
 dnf list installed nginx 
 if [ $? -eq 0 ]
 then
-    echo -e "Nothing to do... $Y Nginx installed $N"
+    echo -e "Nothing to do... $Y Nginx installed $N" 
 else
-    echo "NOT installed.. Nginx Installing Now"
+    echo "NOT installed.. Nginx Installing Now" 
     dnf install nginx -y
     VALIDATE $? Nginx
 fi
