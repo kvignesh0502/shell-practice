@@ -47,3 +47,13 @@ else
     dnf install mysql -y &>>$LOG_FILE                                   # Install MySQL and log
     VALIDATE $? mysql                                                   # Validate installation
 fi
+
+dnf list installed nginx &>>$LOG_FILE
+if [ $? -ne 0 ]
+then
+    echo "nginx is not installed... going to install it" | tee -a $LOG_FILE
+    dnf install nginx -y &>>$LOG_FILE
+    VALIDATE $? "nginx"
+else
+    echo -e "Nothing to do nginx... $Y already installed $N" | tee -a $LOG_FILE
+fi
