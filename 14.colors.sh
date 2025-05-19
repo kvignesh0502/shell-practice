@@ -2,6 +2,11 @@
 
 # we are going to install mqsql nginx
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
 USERID=$(id -u)
 if [ $USERID -eq 0 ]
 then
@@ -10,13 +15,6 @@ else
     echo -e "$R ERROR : Run with Root $N "
     exit 1
 fi
-
-R="\e[31m"
-G="\e[32m"
-Y="\e[33m"
-N="\e[0m"
-
-
 
 VALIDATE(){                                  
 if [ $1 -eq 0 ]                            
